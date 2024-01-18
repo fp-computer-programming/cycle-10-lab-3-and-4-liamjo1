@@ -26,3 +26,52 @@ Write 2 test cases to confirm that your function works when passed a list that:
 
 
 """
+# Lab 10-3
+
+# Author: Liam O'Hara
+
+list = [] # "list" makes a blank list
+
+listd = [] # "listd" creates another blank list
+
+ph = int(0) # "ph = int(o)" sets the placeholder equivalent to 0
+def double_stuff(list):
+
+    ph = 0
+    while len(listd) != len(list): # the list doesn't have every value
+
+        doubv = list[ph] # Doubles the list 
+
+        listd.append(2*doubv) # Doubled list added to the new value 
+
+        ph = ph + 1 # Moves over one value
+
+    print (listd)
+
+double_stuff([1, 2, 3, 4, 5, 6, "s"])
+
+# Lab 10-4
+
+list = [] # "list" equals blank space
+
+indname = [] # "indname" makes a blank list
+
+def indexed_names(list):
+
+    ph = 0 # creates the placeholder and equals it to 0
+
+    while len(indname) != len(list): # this makes sure the lists are equal to the same length
+
+        name = list[ph] # Lists a word 
+
+        rep = [ph, ": ", name] # tells you what to add
+
+        indname.append(rep) # and then adds it
+
+        ph = ph + 1 # moves it over one space 
+
+    print(indname)
+
+names = ["Caleb", "Matthew", "Liam"]
+
+indexed_names(names)
